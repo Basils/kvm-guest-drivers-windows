@@ -6,6 +6,7 @@ if errorlevel 1 goto :fail
 call tools\build.bat NetKVM\NetKVM-VS2015.vcxproj "Win10_SDV" %*
 if errorlevel 1 goto :fail
 call tools\build.bat vioscsi\vioscsi.vcxproj "Win8_SDV Win10_SDV" %*
+test
 if errorlevel 1 goto :fail
 call tools\build.bat viostor\viostor.vcxproj "Win8_SDV Win10_SDV" %*
 if errorlevel 1 goto :fail
